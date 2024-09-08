@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+<style>
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Rathanasara College</h1>
+                <p>Student Management System</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="active"><i data-feather="user-plus"></i> Add Student</a>
+                <a href="search.html"><i data-feather="search"></i> Search Students</a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <h1>Add New Student</h1>
+            <div class="form-card">
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="admissionNo">Admission No</label>
+                        <input type="text" id="admissionNo" name="admissionNo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentName">Student Name</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guardianName">Guardian Name</label>
+                        <input type="text" id="guardianName" name="guardianName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guardianPhone">Guardian Phone</label>
+                        <input type="tel" id="guardianPhone" name="guardianPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Add Student</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+  <p>all right reserved by sajith anurudda<br>
+  <a href="sajith22152@gmail.com">sajith22152@gmail.com</a></p>
+</footer>
+ 
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="app.js"></script>
+
+       
+
+
+</body>
+</html>

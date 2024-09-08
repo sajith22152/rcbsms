@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Students - Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SMS</h2>
+                <p>Student Management System</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html"><i data-feather="user-plus"></i> Add Student</a>
+                <a href="search.html" class="active"><i data-feather="search"></i> Search Students</a>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <h1>Search Students</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search students...">
+                <button id="searchButton"><i data-feather="search"></i></button>
+            </div>
+            <div id="searchResults" class="student-cards">
+                <!-- Search results will be displayed here -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="search.js"></script>
+</body>
+</html>
